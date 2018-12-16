@@ -12,7 +12,7 @@ plugs:
   ros-base-armhf:
     content: ros-base-armhf-v1
     interface: content
-    target: /ros-base
+    target: /ros-base-armhf
 
 parts:
 
@@ -41,7 +41,7 @@ parts:
       #build-path: /opt/ros/kinetic
 
       # Run-time location of the underlay
-      run-path: $SNAP/ros-base/opt/ros/kinetic
+      run-path: $SNAP/ros-base-armhf/opt/ros/kinetic
     catkin-packages:
       - robot_setup_tf      
     after: [ros-base-armhf]
@@ -53,13 +53,13 @@ parts:
 
   mountpoint:
     plugin: nil
-    install: mkdir $SNAPCRAFT_PART_INSTALL/ros-base
+    install: mkdir $SNAPCRAFT_PART_INSTALL/ros-base-armhf
 
 apps:
 
   launch-project:
     command: run-system
-    plugs: [network, network-bind, ros-base]
+    plugs: [network, network-bind, ros-base-armhf]
 
   # robot-setup-tf:
   #   command: robot_setup_tf robot_setup_tf.launch   
