@@ -18,7 +18,7 @@ armhf)
     ;;
 esac
 
-export ROS_BASE=$SNAP/ros-base
+export ROS_BASE=$SNAP/ros-base-armhf
 
 # Add ros-base to the PYTHONPATH
 export PYTHONPATH=$PYTHONPATH:$ROS_BASE/usr/lib/python2.7/dist-packages
