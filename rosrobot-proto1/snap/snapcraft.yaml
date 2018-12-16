@@ -26,9 +26,9 @@ parts:
     prime: [-*]
 
   rosrobot-proto1:
-    source: https://github.com/Lingaprahasam/ROSRobot.git
+    source: https://github.com/Lingaprahasam/ROSRobotP1.io.git
     source-branch: master
-    source-subdir: rosrobot-proto1/robot_setup_tf
+    source-subdir: rosrobot-proto1
     plugin: catkin
     rosdistro: kinetic
     include-roscore: false
@@ -61,5 +61,5 @@ apps:
     command: run-system
     plugs: [network, network-bind, ros-base]
 
-  # robot_setup_tf:
+  # robot-setup-tf:
   #   command: robot_setup_tf robot_setup_tf.launch   
