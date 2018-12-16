@@ -31,3 +31,10 @@
 /ros-base/ros-base.tar.bz2
 # Pi
 /ros-base/ros-base-armhf.tar.bz2
+
+# rosrobot-proto1
+/rosrobot-proto1/parts
+/rosrobot-proto1/prime
+/rosrobot-proto1/ros-base_1.0_amd64.snap
+/rosrobot-proto1/snap/.snapcraft
+/rosrobot-proto1/stage/
