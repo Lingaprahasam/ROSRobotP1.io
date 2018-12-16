@@ -17,3 +17,17 @@
 # =====================
 # Snapcraft Work Space
 # =====================
+# ======================
+# ROS snapcraft build
+# ======================
+# ros-base
+/ros-base/parts
+/ros-base/prime
+/ros-base/ros-base_1.0_amd64.snap
+# Pi
+/ros-base/ros-base_1.0_armhf.snap
+/ros-base/snap/.snapcraft
+/ros-base/stage/
+/ros-base/ros-base.tar.bz2
+# Pi
+/ros-base/ros-base-armhf.tar.bz2
