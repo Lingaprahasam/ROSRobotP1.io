@@ -14,6 +14,12 @@ plugs:
     interface: content
     target: /ros-base-armhf
 
+apps:
+
+  launch-project:
+    command: run-system
+    plugs: [network, network-bind, ros-base-armhf]
+
 parts:
 
   # The `source` here is the tarred staging area of the ros-base snap.
@@ -54,12 +60,3 @@ parts:
   mountpoint:
     plugin: nil
     install: mkdir $SNAPCRAFT_PART_INSTALL/ros-base-armhf
-
-apps:
-
-  launch-project:
-    command: run-system
-    plugs: [network, network-bind, ros-base-armhf]
-
-  # robot-setup-tf:
-  #   command: robot_setup_tf robot_setup_tf.launch
