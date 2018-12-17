@@ -32,7 +32,7 @@ esac
 
 
 
-export ROS_BASE=$SNAP/ros-base
+export ROS_BASE=$SNAP/ros-base-armhf
 
 
 
