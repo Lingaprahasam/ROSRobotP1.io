@@ -53,6 +53,9 @@ parts:
     after: [ros-base-armhf]
   
   run-system:
+    source: https://github.com/Lingaprahasam/ROSRobotP1.io.git
+    source-branch: master
+    source-subdir: rosrobot-proto1
     plugin: dump
     stage: [bin/run-system]
     prime: [bin/run-system]
