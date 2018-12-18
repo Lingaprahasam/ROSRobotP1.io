@@ -20,17 +20,17 @@
 # ======================
 # ROS snapcraft build
 # ======================
-# ros-base
-/ros-base/parts
-/ros-base/prime
-/ros-base/ros-base_1.0_amd64.snap
+# ros-base-armhf
+/ros-base-armhf/parts
+/ros-base-armhf/prime
+/ros-base-armhf/ros-base-armhf_1.0_amd64.snap
 # Pi
-/ros-base/ros-base_1.0_armhf.snap
-/ros-base/snap/.snapcraft
-/ros-base/stage/
-/ros-base/ros-base.tar.bz2
+/ros-base-armhf/ros-base_1.0_armhf.snap
+/ros-base-armhf/snap/.snapcraft
+/ros-base-armhf/stage/
+/ros-base-armhf/ros-base.tar.bz2
 # Pi
-/ros-base/ros-base-armhf.tar.bz2
+/ros-base-armhf/ros-base-armhf.tar.bz2
 
 # rosrobot-proto1
 /rosrobot-proto1/parts
