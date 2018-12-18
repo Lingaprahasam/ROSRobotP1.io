@@ -25,7 +25,7 @@
 /ros-base-armhf/prime
 /ros-base-armhf/ros-base-armhf_1.0_amd64.snap
 # Pi
-/ros-base-armhf/ros-base_1.0_armhf.snap
+/ros-base-armhf/ros-base-armhf_1.0_armhf.snap
 /ros-base-armhf/snap/.snapcraft
 /ros-base-armhf/stage/
 /ros-base-armhf/ros-base.tar.bz2
