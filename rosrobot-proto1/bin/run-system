@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 case $SNAP_ARCH in
 
 amd64)
@@ -30,17 +28,11 @@ arm64)
 
 esac
 
-
-
 export ROS_BASE=$SNAP/ros-base-armhf
-
-
 
 # Add ros-base to the PYTHONPATH
 
 export PYTHONPATH=$PYTHONPATH:$ROS_BASE/usr/lib/python2.7/dist-packages
-
-
 
 # Add ros-base to LD_LIBRARY_PATH
 
