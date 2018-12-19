@@ -20,6 +20,10 @@ apps:
     command: run-system
     plugs: [network, network-bind, ros-base-armhf]
 
+  robot_setup_tf:
+    command: roslaunch robot_setup_tf robot_setup_tf.launch
+    plugs: [network, network-bind, ros-base-armhf]  
+
 parts:
 
   # The `source` here is the tarred staging area of the ros-base snap.
