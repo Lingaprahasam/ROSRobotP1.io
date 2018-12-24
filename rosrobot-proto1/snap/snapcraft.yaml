@@ -41,6 +41,7 @@ parts:
     source-subdir: rosrobot-proto1
     plugin: catkin
     rosdistro: kinetic
+    rosinstall-files: [rosrobot-proto1.rosinstall]
     include-roscore: false
     underlay:
       # Build-time location of the underlay
