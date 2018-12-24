@@ -20,10 +20,6 @@ apps:
     command: run-system
     plugs: [network, network-bind, ros-base-armhf]
 
-  robot-setup-tf:
-    command: roslaunch robot_setup_tf robot_setup_tf.launch
-    plugs: [network, network-bind, ros-base-armhf]  
-
 parts:
 
   # The `source` here is the tarred staging area of the ros-base snap.
@@ -35,13 +31,9 @@ parts:
     # This is only used for building-- filter it out of the final snap.
     prime: [-*]
 
-  rosrobot-proto1:
-    source: https://github.com/Lingaprahasam/ROSRobotP1.io.git
-    source-branch: master
-    source-subdir: rosrobot-proto1
+  rosrobot-proto1:    
     plugin: catkin
-    rosdistro: kinetic
-    rosinstall-files: [rosrobot-proto1.rosinstall]
+    rosdistro: kinetic    
     include-roscore: false
     underlay:
       # Build-time location of the underlay
@@ -58,9 +50,6 @@ parts:
     after: [ros-base-armhf]
   
   run-system:
-    source: https://github.com/Lingaprahasam/ROSRobotP1.io.git
-    source-branch: master
-    source-subdir: rosrobot-proto1
     plugin: dump
     stage: [bin/run-system]
     prime: [bin/run-system]
